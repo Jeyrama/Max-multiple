@@ -33,3 +33,11 @@ function maxMultiple(divisor, bound) {
 }
 
 // or
+
+function maxMultiple(divisor, bound) {
+  while (bound % divisor) {
+    bound--;
+  }
+  
+  return bound;
+}
